@@ -1,10 +1,11 @@
 import { FormEvent, useState } from 'react';
+import { api } from '../../services/api';
 import Modal from 'react-modal';
 import { Container, TransactionTypeContainer, RadioBox } from './styles';
 import closeImg from '../../assets/close.svg';
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg'
-import { api } from '../../services/api';
+
 
 interface NewTransactionModalProps {
     isOpen: boolean;
